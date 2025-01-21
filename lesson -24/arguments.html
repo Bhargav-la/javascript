@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arguments in javascript</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        function findmaxer() {
+            var i;
+            var max = 0;
+            for(i = 0;i < arguments.length;i++){
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+        document.getElementById("result").innerHTML = findmaxer(4,5,6);
+    </script>
+    
+</body>
+</html>
