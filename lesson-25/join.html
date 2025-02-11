@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Join and Pop in Javascript</title>
+</head>
+<body>
+<p id="myjoin"></p>
+<p id="myfirstpop"></p>
+<p id="mysecondpop"></p>
+<script>
+    var fruits = ["Mango","Banana","Apple","Orange"];
+    document.getElementById("myjoin").innerHTML = fruits.join(" * ");
+    document.getElementById("myfirstpop").innerHTML = fruits;fruits.pop();
+    document.getElementById("mysecondpop").innerHTML = fruits;
+</script>
+    
+</body>
+</html>
