@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Project-3</title>
+</head>
+<body>
+    <button onclick="myfunction()">Click me</button>
+    <p id="result"></p>
+    <script>
+        function myfunction() {
+            var x = 10;
+            var y = 20;
+            var a = eval("x + y") + "<br>";
+            var b = eval("2 * 2") + "<br>";
+            var c = eval("x - y") + "<br>";
+            var res = a + b + c;
+            document.getElementById("result").innerHTML = res;
+        }
+    </script>
+</body>
+</html>
